@@ -1,0 +1,4 @@
+requests>=2.27.1
+pandas>=1.3.5
+cvss>=2.4
+pydriller>=2.4.1

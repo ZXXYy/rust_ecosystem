@@ -1,0 +1,4 @@
+*.csv
+*.json
+crates_io_db/
+.ipynb_checkpoints/

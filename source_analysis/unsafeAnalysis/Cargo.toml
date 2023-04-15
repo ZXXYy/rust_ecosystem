@@ -1,0 +1,28 @@
+[package]
+name = "unsafe-analysis"
+version = "0.1.0"
+edition = "2021"
+authors = ["Xiaoye Zheng <xiaoyez@zju.edu.cn>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "rustc"
+path = "src/main.rs"
+
+
+[dependencies]
+decls = { path = "../decls" }
+cargo_metadata = "0.14.1"
+cargo = "0.59.0"
+fxhash = "0.2.1"
+
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+log = "0.4.0"
+env_logger = "0.9.0"
+
+[package.metadata.rust-analyzer]
+# This crate uses #[feature(rustc_private)]
+rustc_private = true

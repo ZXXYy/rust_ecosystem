@@ -1,0 +1,5 @@
+*.db
+repos_mirror
+.DS_Store
+test/
+*.csv
